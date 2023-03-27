@@ -61,7 +61,7 @@ const PostListItem = ({ element }: Props) => {
                         xmlns='http://www.w3.org/2000/svg'
                         width='16'
                         height='16'
-                        onClick={(e) => deletePost(e, element.id)}
+                        onClick={(e) => deletePost(element.id)}
                         fill='currentColor'
                         className='bi bi-trash3-fill'
                         viewBox='0 0 16 16'>

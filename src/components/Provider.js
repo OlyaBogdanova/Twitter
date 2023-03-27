@@ -55,16 +55,18 @@ const Provider = (props) => {
 
     function deletePost(id) {
         const newArr = [...posts];
-        const index = newArr.findIndex((el) => el.id === id);
-
+        const index = posts.findIndex((el) => el.id === id);
+console.log(index);
         let changeArr;
         if (index !== 0) {
             changeArr = [
                 ...newArr.splice(0, index),
                 ...newArr.splice(index, newArr.length - 1),
             ];
+            console.log(changeArr);
         } else {
             changeArr = [...newArr.splice(1, newArr.length - 1)];
+            console.log(changeArr);
         }
         setPosts(changeArr);
     }
