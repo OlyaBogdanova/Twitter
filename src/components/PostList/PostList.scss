@@ -1,0 +1,15 @@
+.list-group-item.activeItem:hover {
+    background-color: rgb(170, 194, 254);
+}
+.heart {
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.heart.active {
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+.star,
+.heart {
+    margin-right: 5px;
+}
